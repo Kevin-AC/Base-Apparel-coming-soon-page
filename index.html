@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Base Apparel coming soon page</title>
+</head>
+<body class=" bg-white font-JosefinSans grid place-content-center">
+  <main class="w-375 lg:w-full lg:h-800 lg:grid lg:grid-cols-2 lg:bg-backgroundD relative ">
+      <div class="my-5 ml-8 lg:mt-20 lg:mx-28 lg:col-start-1 lg:row-start-1  "><img src="./images/logo.svg" alt="logo"></div>
+      <img class="lg:col-star-2 w-full h-64  bg-heroMobile bg-no-repeat bg-cover lg:h-full lg:content-heroDeskt"></img>
+    <section class="px-4 pt-10 lg:pt-56 lg:px-0 lg:pr-4 lg:mx-28 lg:col-start-1 lg:row-start-1 text-center lg:text-left">
+      <h1 class="font-bold text-4xl lg:text-7xl text-DarkGrayishRed px-5 lg:px-0 uppercase  tracking-widest mb-6 "><span class="text-DesaturatedRed font-light">We're</span><br>coming soon</h1>
+      <p class=" text-DesaturatedRed ">
+      Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <div class="relative px-3 lg:px-0 lg:pr-10 ">
+        <input id="emailInput" class="w-full lg:w-400 h-14 text-DarkGrayishRed placeholder:text-DesaturatedRed  rounded-full pl-6 mt-10 border-DesaturatedRed border" type="text" placeholder="Email Address">
+        <button id="btnSubmit" class=" bg-gradient-to-tl from-gradien2 to-gradien1 hover:bg-SoftRed w-20 h-14 absolute top-10 left-64 lg:left-80 rounded-full grid place-content-center"><img src="./images/icon-arrow.svg" alt=""></button>
+        <div id="emailError">
+          <!-- <img class="absolute top-14 left-56 lg:left-72 " src="./images/icon-error.svg" alt="icon-error">
+          <p class="text-SoftRed pl-7 mt-2" >Please provide a valid email</p> -->
+        </div>
+        
+      </div>      
+    </section>
+    <footer class="lg:col-start-1 lg:col-end-3">
+      <p class="mt-10 lg:mt-0 text-center px-16 text-DarkGrayishRed ">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="font-semibold text-DesaturatedRed" href="https://www.frontendmentor.io/profile/Kevin-AC">Kevin Argumedo</a>.
+      </p>
+    </footer>
+  </main>
+ <script src="./main.js"></script>
+</body>
+</html>
