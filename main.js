@@ -1,33 +1,31 @@
-const emailInput=document.querySelector('#emailInput')
-
-const emailError=document.querySelector('#emailError')
-
-const buton= document.querySelector('#btnSubmit')
+const emailInput=document.getElementById('emailInput')
+const buton= document.getElementById('btnSubmit')
+const imgError=document.getElementById('imgError')
+const errorTxt=document.getElementById('errorTxt')
 
 buton.addEventListener('click',(e)=>{
-    console.log(emailInput.value);
-
-    validarEmail(emailInput.value,emailInput,emailError)
+    validarEmail(emailInput.value,emailInput,imgError,errorTxt)
 })
 
 
-function validarEmail(valorInput,IdInput,IdError){
+function validarEmail(valorInput,IdInput,imgError,errorTxt){
     let regExp=/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
     if(regExp.test(valorInput)){
-        ocultarError(IdInput,IdError)
+        ocultarError(IdInput,imgError,errorTxt)
 
     }else{
-        verError(IdInput,IdError,'Please provide a valid email')
+        verError(IdInput,imgError,errorTxt)
     }
 }
 
-function verError(IdInput,IdError,error){
-    IdInput.style.border='1px solid red';// border border-SoftRed
-    IdError.innerHTML=`<img class="absolute top-14 left-56 lg:left-72 " src="./images/icon-error.svg" alt="icon-error">
-                        <p class="text-SoftRed pl-7 mt-2" >${error}</p>`;
+function verError(IdInput,imgError,errorTxt){
+    IdInput.classList.add('errorBorde')
+    imgError.classList.remove('hide')
+    errorTxt.innerText='Please provide a valid email'
 }
 
-function ocultarError(IdInput,IdError){
-    IdInput.style.border="1px solid hsl(0, 36%, 70%)"
-    IdError.innerHTML=``//quitar el mensaje de error
+function ocultarError(IdInput,imgError){
+    IdInput.classList.remove('errorBorde')
+    imgError.classList.add('hide')
+    errorTxt.innerText=``
 }

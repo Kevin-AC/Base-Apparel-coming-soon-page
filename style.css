@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 @tailwind base;
+.input{
+    @apply w-full lg:w-400 h-14  text-DarkGrayishRed placeholder:text-DesaturatedRed  rounded-full pl-6 mt-10 border border-DesaturatedRed  outline-none
+}
+.errorBorde{
+    @apply  border-red-500
+}
+.hide{
+    @apply hidden
+}
 @tailwind components;
 @tailwind utilities;

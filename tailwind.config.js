@@ -27,9 +27,10 @@ module.exports = {
       width:{
         '375':'375px',
         '400':'400px',
+        '610':'610px',
       },
-      height:{
-        '800':'800px',
+      maxHeight: {
+        '800': '800px',
       },
       backgroundImage:{
         'heroMobile':'url(/images/hero-mobile.jpg)',
