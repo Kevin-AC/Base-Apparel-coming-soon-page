@@ -12,6 +12,7 @@ module.exports = {
       colors:{
         'DesaturatedRed':'hsl(0, 36%, 70%)',
         'SoftRed':'hsl(0, 93%, 68%)',
+        'prueba':'#FECFCF',
         'DarkGrayishRed':'hsl(0, 6%, 24%)',
         'gradien1':' hsl(0, 80%, 86%)',
         'gradien2':' hsl(0, 74%, 74%)',
@@ -28,6 +29,10 @@ module.exports = {
         '375':'375px',
         '400':'400px',
         '610':'610px',
+        '85':'85px'
+      },
+      height:{
+        '57':'57px'
       },
       maxHeight: {
         '800': '800px',

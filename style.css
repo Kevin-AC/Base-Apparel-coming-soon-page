@@ -9,5 +9,8 @@
 .hide{
     @apply hidden
 }
+.buton{
+    @apply w-85 h-57 absolute top-10 left-64 lg:left-80 rounded-full grid place-content-center hover:bg-gradient-to-l from-Hgradien1 to-Hgradien2
+}
 @tailwind components;
 @tailwind utilities;
